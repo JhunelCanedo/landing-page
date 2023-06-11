@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root {
+    --button-color:#9AC5F4;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* -- HEADER -- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 20px;
+    border-bottom: 1px solid gainsboro;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1;
+}
+.logo__links {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+/* typing text class animation */
+.element {
+    color: #30A2FF;
+    
+}
+
+
+.nav ul {
+    display: flex;
+    column-gap: 20px;
+}
+.nav ul li a {
+    color: black;
+}
+
+nav ul li a:hover {
+    color: var(--button-color);
+}
+/* section containers parents */
+.section1__parent,
+.section2__parent,
+.section3__parent,
+.section4__parent,
+.section5__parent {
+    height: 100vh;
+}
+
+.section1__parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,500px));
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+   
+
+}
+.section1__parent h1 {
+    font-size: clamp(0.8rem,10vw,4rem);
+}
+.section1_link__container {
+    background: var(--button-color);
+    border-radius: 5px;
+    padding: 10px 5px;
+    text-align: center;
+    width: 30%;
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+}
+.section1_link__container:hover {
+    background: #30A2FF;
+}
+.section1__parent p {
+    color: rgb(190, 185, 185);
+}
+.section1__link {
+    color: white;
+}
+.wallpaper__container img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    border-radius: 10px;
+    
+    
+}
+
+
+/* section2  */
+.section2__parent {
+display: flex;
+gap: 20px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+   
+}
+.section2__parent h2 {
+    font-size: 2rem;
+}
+.section2__courses {
+    display: grid;
+    padding: 0 20px;
+    justify-content: center;
+    grid-template-columns: repeat(4,23%);
+    row-gap: 30px;
+    column-gap: 10px;
+}
+.video_course {
+    text-align: center;
+    font-size: 0.8rem;
+    transition: transform 200ms ease-in;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+
+}
+.video_course:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: translateY(-10px);
+}
+.video_course video {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.video__links {
+    font-weight: 500;
+    display: block;
+    padding: 10px 0;
+}
+
+.video__links a {
+    color: black;
+}
+/* section3  */
+.section3__parent {
+    background: #c0d3cb;
+}
+
+
+/* section4  */
+.section4__parent {
+    background: #afe6b6;
+}
+
+
+/* section5  */
+.section5__parent {
+    background: #3f8de0;
+}
